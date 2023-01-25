@@ -20,7 +20,8 @@ body {
   display: flex;
   justify-content: space-evenly;
   width: 100%;
-  padding: 10px 5%;
+  max-height: 50px;
+  padding: 0 5%;
   text-decoration: none;
   vertical-align: middle;
   color: darkgray;
@@ -48,21 +49,21 @@ body {
   position: relative;
   top: -5px;
   margin-right: 5px;
-  font-size: 2rem;
+  font-size: 1.4rem;
   text-decoration: none;
   color: black;
 }
 
-#header-img {
+#company-logo {
   position: relative;
-  top: -5px;
-  width: 50px;
+  top: -3px;
+  width: 40px;
 }
 
 a {
   position: relative;
-  top: 10px;
-  font-size: 1.5rem;
+  top: 6px;
+  font-size: 1.4rem;
   text-decoration: none;
   color: black;
 }
