@@ -2,6 +2,26 @@
   box-sizing: border-box;
 }
 
+::-webkit-scrollbar {
+  border-radius: 30px;
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 30px;
+  background: #888;
+  box-shadow: 10px 15px 5px  #4d4d4d inset;
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   font-family: "Aclonica", Helvetica, Arial, Lucida, sans-serif;
