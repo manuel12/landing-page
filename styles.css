@@ -413,6 +413,22 @@ footer {
     display: block;
   }
 
+  .navbar-list {
+    position: initial;
+    display: flex;
+    width: 60%;
+    z-index: 1;
+    transition: none;
+  }
+
+  .navbar-link {
+    display: initial;
+  }
+
+  #hamburger-btn {
+    display: none;
+  }
+
   .inner-content {
     display: flex;
   }
