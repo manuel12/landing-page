@@ -453,19 +453,21 @@ footer {
 
   .form-elements {
     display: flex;
+    max-width: 100%;
     margin-top: 10px;
-    margin: auto;
-
+    margin: 0 auto;
   }
 
   #email {
-    width: 400px;
+    min-width: 400px;
+    width: 75%;
     height: 50px;
     margin-right: 10px;
   }
 
   #submit {
-    width: 120px;
+    min-width: 120px;
+    width: 25%;
     height: 50px;
     font-size: 1rem;
   }
@@ -477,6 +479,7 @@ footer {
   }
 
   .pricing-card {
+    margin: 0;
     width: 200px;
   }
 
