@@ -357,17 +357,23 @@ iframe {
 }
 
 .price-text {
-  font-family: "Aclonica", Helvetica, Arial, Lucida, sans-serif;
   background-color: rgb(87, 87, 87);
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   height: 120px;
-  text-align: center;
-  vertical-align: middle;
+  padding: 20px 20px;
+
+  font-family: "Aclonica", Helvetica, Arial, Lucida, sans-serif;
   font-size: 2rem;
   font-weight: 400;
-  padding: 20px 20px;
+  text-align: center;
+  vertical-align: middle;
+
   color: white;
+}
+
+.price-text > span {
+  font-style: italic;
 }
 
 .price {
@@ -394,11 +400,6 @@ footer {
   .features-text {
     font-size: 1.2rem;
   }
-
-  /* .week-segment {
-    display: flex;
-    justify-content: space-between;
-  } */
 
   .week-segment > p {
     display: inline;
