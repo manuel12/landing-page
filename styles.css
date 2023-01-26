@@ -418,7 +418,7 @@ footer {
   }
 
   .video-features {
-    width: 75%;
+    width: 65%;
     margin-right: 2.5%;
   }
 
@@ -427,7 +427,7 @@ footer {
   }
 
   .schedule-hours {
-    width: 25%;
+    width: 35%;
     margin-left: 2.5%;
   }
 
@@ -441,7 +441,6 @@ footer {
 
   .hours-container {
     height: fit-content;
-    margin-top: 22px;
   }
 
   .week-segment > p {
@@ -453,8 +452,10 @@ footer {
   }
 
   .form-elements {
+    display: flex;
     margin-top: 10px;
     margin: auto;
+
   }
 
   #email {
