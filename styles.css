@@ -4,9 +4,7 @@
 
 body {
   margin: 0;
-  font-family: "Open Sans", Arial, sans-serif;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans",
-    Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  font-family: "Aclonica", Helvetica, Arial, Lucida, sans-serif;
   font-size: 1.1rem;
 }
 
@@ -17,14 +15,19 @@ body {
 
 #navbar {
   background-color: lightgray;
-  display: flex;
-  justify-content: space-evenly;
   width: 100%;
-  max-height: 50px;
+  height: 50px;
   padding: 0 5%;
   text-decoration: none;
   vertical-align: middle;
   color: darkgray;
+}
+
+.navbar-list {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0;
+  padding: 10px 0;
 }
 
 .main-heading {
@@ -56,14 +59,14 @@ body {
 
 #company-logo {
   position: relative;
-  top: -3px;
-  width: 40px;
+  width: 30px;
 }
 
 a {
   position: relative;
-  top: 6px;
-  font-size: 1.4rem;
+  display: block;
+  line-height: 25px;
+  font-size: 1.2rem;
   text-decoration: none;
   color: black;
 }
@@ -78,10 +81,16 @@ a:hover {
 }
 
 #content {
-  padding: 75px 5% 5%;
+  padding-top: 50px;
   background-image: url(https://www.telegraph.co.uk/content/dam/beauty/2020/05/19/GettyImages-1096942614_trans_NvBQzQNjv4BqZgEkZX3M936N5BQK4Va8RWtT0gK_6EfZT336f62EI5U.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.content-container {
+  margin: 0 auto;
+  width: 90%;
+  padding: 5% 0;
 }
 
 .video-features {
@@ -166,54 +175,18 @@ iframe {
   margin: 5px auto;
 }
 
-#pricing {
-  background-image: url(https://img.freepik.com/premium-photo/bearded-man-barbershop-man-visiting-hairstylist-barbershop-barber-works-with-beard-clipper-hipster-client-getting-haircut-hands-hairdresser-with-beard-clipper-closeup_293990-2807.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding: 15%;
-  height: fit-content;
-  padding-top: 20px;
+#subscribe {
+  background-color: #000000;
 }
 
-.pricing-card {
-  background-color: lightgray;
-  border: 3px dashed rgb(80, 80, 80);
-  border-radius: 5px;
-  width: 100%;
-  height: 300px;
-  margin-bottom: 20px;
-}
-
-.price-text {
-  font-family: "Aclonica", Helvetica, Arial, Lucida, sans-serif;
-  background-color: rgb(87, 87, 87);
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-  height: 120px;
-  text-align: center;
-  vertical-align: middle;
-  font-size: 2rem;
-  font-weight: 400;
-  padding: 20px 20px;
-  color: white;
-}
-
-.price {
-  margin: 10px;
-  font-weight: bold;
-}
-
-.card-btn {
-  display: block;
-  margin: auto 5%;
-  margin-top: 60px;
+.subscribe-container {
+  margin: 0 auto;
   width: 90%;
+  padding: 5% 0;
 }
 
 #form {
-  background-color: #000000;
   margin: auto;
-  padding: 2.5% 5%;
   width: 100%;
   height: 200px;
 }
@@ -253,6 +226,54 @@ iframe {
   font-weight: 700;
   font-size: 1.2rem;
   cursor: pointer;
+}
+
+#pricing {
+  background-image: url(https://img.freepik.com/premium-photo/bearded-man-barbershop-man-visiting-hairstylist-barbershop-barber-works-with-beard-clipper-hipster-client-getting-haircut-hands-hairdresser-with-beard-clipper-closeup_293990-2807.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: fit-content;
+}
+
+.pricing-container {
+  margin: 0 auto;
+  width: 90%;
+  padding: 5% 0;
+}
+
+.pricing-card {
+  background-color: lightgray;
+  border: 3px dashed rgb(80, 80, 80);
+  border-radius: 5px;
+  width: 100%;
+  height: 300px;
+  margin-bottom: 20px;
+}
+
+.price-text {
+  font-family: "Aclonica", Helvetica, Arial, Lucida, sans-serif;
+  background-color: rgb(87, 87, 87);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  height: 120px;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 2rem;
+  font-weight: 400;
+  padding: 20px 20px;
+  color: white;
+}
+
+.price {
+  margin: 10px;
+  font-weight: bold;
+}
+
+.card-btn {
+  display: block;
+  margin: auto 5%;
+  margin-top: 60px;
+  width: 90%;
 }
 
 footer {
@@ -314,9 +335,12 @@ footer {
     text-align: center;
   }
 
+  #form {
+    height: auto;
+  }
+
   .form-elements {
     margin-top: 10px;
-    width: 80%;
     margin: auto;
   }
 
@@ -332,10 +356,10 @@ footer {
     font-size: 1rem;
   }
 
-  #pricing {
+  .pricing-container {
     display: flex;
-    justify-content: space-evenly;
-    padding: 5%;
+    justify-content: space-between;
+    padding: 5% 0;
   }
 
   .pricing-card {
@@ -405,10 +429,10 @@ footer {
 
   #form {
     display: flex;
+    justify-content: space-between;
   }
 
   .subscription-heading {
-    width: 40%;
     margin-top: 60px;
     margin-right: 20px;
   }
@@ -435,5 +459,13 @@ footer {
     font-size: 1.6rem;
     padding: 20px 10px;
     height: 115px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .content-container,
+  .subscribe-container,
+  .pricing-container {
+    width: 80%;
   }
 }
