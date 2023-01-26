@@ -66,6 +66,18 @@ body {
   background-color: white;
 }
 
+#hamburger-btn.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+#hamburger-btn.active .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+#hamburger-btn.active .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
 .company-info {
   display: flex;
   position: relative;
@@ -104,6 +116,12 @@ body {
   margin: 0;
 
   text-align: center;
+  z-index: 1;
+  transition: 0.25s ease-in-out;
+}
+
+.navbar-list-active {
+  top: 0;
 }
 
 .navbar-link {
