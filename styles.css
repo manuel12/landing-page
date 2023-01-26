@@ -14,9 +14,8 @@
 ::-webkit-scrollbar-thumb {
   border-radius: 30px;
   background: #888;
-  box-shadow: 10px 15px 5px  #4d4d4d inset;
+  box-shadow: 10px 15px 5px #4d4d4d inset;
 }
-
 
 html {
   scroll-behavior: smooth;
@@ -45,11 +44,38 @@ body {
   color: darkgray;
 }
 
+#hamburger-btn {
+  display: block;
+  background-color: #ec2227;
+  border-radius: 5px;
+
+  margin: 5px 0 5px 5px;
+
+  width: 50px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+  background-color: white;
+}
+
 .company-info {
   display: flex;
   position: relative;
   width: 30%;
   margin-left: 10%;
+}
+
+#company-link {
+  display: flex;
+  text-decoration: none;
 }
 
 #company-name {
@@ -71,15 +97,20 @@ body {
 }
 
 .navbar-list {
-  display: flex;
-  justify-content: space-between;
-  width: 70%;
+  background-color: lightgray;
+  position: relative;
+  top: -200px;
+  width: 100%;
   margin: 0;
+
+  text-align: center;
 }
 
 .navbar-link {
-  position: relative;
+  background-color: lightgray;
   display: block;
+  width: 100%;
+
   line-height: 50px;
   font-size: 1.2rem;
   text-decoration: none;
