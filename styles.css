@@ -27,6 +27,12 @@ body {
   font-size: 1.1rem;
 }
 
+h1,
+h2,
+h3 {
+  text-align: center;
+}
+
 #header {
   position: fixed;
   width: 100%;
@@ -41,7 +47,7 @@ body {
 .navbar-container {
   background-color: lightgray;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   margin: auto;
   height: 50px;
   width: 90%;
@@ -83,6 +89,7 @@ body {
   background-color: lightgray;
   position: absolute;
   top: -200px;
+  left: 0;
   width: 100%;
   margin: 0;
   padding: 0;
@@ -92,9 +99,9 @@ body {
   transition: 0.25s ease-in-out;
 }
 
-
 .navbar-list-active {
   top: 50px;
+  left: 0;
 }
 
 .navbar-link {
@@ -161,7 +168,6 @@ a:hover {
 
 .main-heading {
   font-family: "Poppins", Helvetica, Arial, Lucida, sans-serif;
-  text-align: center;
   text-transform: uppercase;
   line-height: 1.2em;
   word-spacing: 5px;
@@ -412,10 +418,6 @@ footer {
 
   .week-segment > p {
     display: block;
-  }
-
-  .subscription-heading {
-    text-align: center;
   }
 
   #form {
