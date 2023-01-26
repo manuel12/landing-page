@@ -509,11 +509,6 @@ footer {
     font-size: 1rem;
   }
 
-  .company-info {
-    position: relative;
-    right: 15%;
-  }
-
   .inner-content {
     display: flex;
   }
@@ -543,17 +538,7 @@ footer {
   }
 
   .hours-container {
-    margin-top: 10%;
-    height: 250px;
-  }
-
-  .hours-heading {
-    margin: auto;
-  }
-
-  .week-segment {
-    display: flex;
-    justify-content: center;
+    height: 320px;
   }
 
   .week-segment > p {
@@ -568,6 +553,10 @@ footer {
   .subscription-heading {
     margin-top: 60px;
     margin-right: 20px;
+  }
+
+  .form-elements {
+    margin: 0;
   }
 
   #email {
