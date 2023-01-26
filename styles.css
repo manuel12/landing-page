@@ -34,55 +34,26 @@ body {
 
 #navbar {
   background-color: lightgray;
-  display: flex;
-  justify-content: space-around;
   width: 100%;
   height: 50px;
-  padding: 0 5%;
+}
+
+.navbar-container {
+  background-color: lightgray;
+  display: flex;
+  justify-content: space-around;
+  margin: auto;
+  height: 50px;
+  width: 90%;
   text-decoration: none;
   vertical-align: middle;
   color: darkgray;
 }
 
-#hamburger-btn {
-  display: block;
-  background-color: #ec2227;
-  border-radius: 5px;
-
-  margin: 5px 0 5px 5px;
-
-  width: 50px;
-  height: 40px;
-  cursor: pointer;
-}
-
-.bar {
-  display: block;
-  width: 25px;
-  height: 3px;
-  margin: 5px auto;
-  -webkit-transition: all 0.25s ease-in-out;
-  transition: all 0.25s ease-in-out;
-  background-color: white;
-}
-
-#hamburger-btn.active .bar:nth-child(2) {
-  opacity: 0;
-}
-
-#hamburger-btn.active .bar:nth-child(1) {
-  transform: translateY(8px) rotate(45deg);
-}
-
-#hamburger-btn.active .bar:nth-child(3) {
-  transform: translateY(-8px) rotate(-45deg);
-}
-
 .company-info {
   display: flex;
   position: relative;
-  width: 30%;
-  margin-left: 10%;
+  width: 10%;
 }
 
 #company-link {
@@ -110,18 +81,20 @@ body {
 
 .navbar-list {
   background-color: lightgray;
-  position: relative;
+  position: absolute;
   top: -200px;
   width: 100%;
   margin: 0;
+  padding: 0;
 
   text-align: center;
-  z-index: 1;
+  z-index: -1;
   transition: 0.25s ease-in-out;
 }
 
+
 .navbar-list-active {
-  top: 0;
+  top: 50px;
 }
 
 .navbar-link {
@@ -137,6 +110,41 @@ body {
 
 a:hover {
   color: #ee603f;
+}
+
+#hamburger-btn {
+  display: block;
+  background-color: #ec2227;
+  border-radius: 5px;
+
+  margin: 5px 0;
+  padding: 4px 0;
+
+  width: 25%;
+  height: 40px;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 30px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+  background-color: white;
+}
+
+#hamburger-btn.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+#hamburger-btn.active .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+#hamburger-btn.active .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
 }
 
 .main {
