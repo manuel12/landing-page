@@ -146,5 +146,21 @@
       </section>
     </main>
     <!-- <footer id="footer"></footer> -->
+    <script>
+      const hamburgerBtn = document.getElementById("hamburger-btn");
+      const navbarListElem = document.getElementsByClassName("navbar-list")[0];
+      hamburgerBtn.onclick = () => {
+        hamburgerBtn.classList.toggle("active");
+        navbarListElem.classList.toggle("navbar-list-active");
+      };
+
+      const navBarLinks = document.querySelectorAll(".navbar-list > a");
+      navBarLinks.forEach((navbarLink) => {
+        navbarLink.onclick = () => {
+          hamburgerBtn.classList.remove("active");
+          navbarListElem.classList.remove("navbar-list-active");
+        };
+      });
+    </script>
   </body>
 </html>
