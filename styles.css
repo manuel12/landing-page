@@ -15,6 +15,8 @@ body {
 
 #navbar {
   background-color: lightgray;
+  display: flex;
+  justify-content: space-around;
   width: 100%;
   height: 50px;
   padding: 0 5%;
@@ -23,35 +25,18 @@ body {
   color: darkgray;
 }
 
-.navbar-list {
-  display: flex;
-  justify-content: space-evenly;
-  margin: 0;
-  padding: 10px 0;
-}
-
-.main-heading {
-  font-family: "Poppins", Helvetica, Arial, Lucida, sans-serif;
-  text-align: center;
-  text-transform: uppercase;
-  line-height: 1.2em;
-  word-spacing: 5px;
-  font-size: 30px;
-  color: white;
-  text-shadow: 0em 0.1em 0.1em #000000;
-}
-
 .company-info {
   display: flex;
   position: relative;
-  right: 10%;
+  width: 30%;
+  margin-left: 10%;
 }
 
 #company-name {
   display: none;
   position: relative;
-  top: -5px;
   margin-right: 5px;
+  line-height: 50px;
   font-size: 1.4rem;
   text-decoration: none;
   color: black;
@@ -59,13 +44,23 @@ body {
 
 #company-logo {
   position: relative;
-  width: 30px;
+  top: 5px;
+  width: 40px;
+  height: 40px;
+  line-height: 50px;
 }
 
-a {
+.navbar-list {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  margin: 0;
+}
+
+.navbar-link {
   position: relative;
   display: block;
-  line-height: 25px;
+  line-height: 50px;
   font-size: 1.2rem;
   text-decoration: none;
   color: black;
@@ -85,6 +80,17 @@ a:hover {
   background-image: url(https://www.telegraph.co.uk/content/dam/beauty/2020/05/19/GettyImages-1096942614_trans_NvBQzQNjv4BqZgEkZX3M936N5BQK4Va8RWtT0gK_6EfZT336f62EI5U.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.main-heading {
+  font-family: "Poppins", Helvetica, Arial, Lucida, sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 1.2em;
+  word-spacing: 5px;
+  font-size: 30px;
+  color: white;
+  text-shadow: 0em 0.1em 0.1em #000000;
 }
 
 .content-container {
