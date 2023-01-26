@@ -217,6 +217,11 @@ iframe {
   width: 100%;
 }
 
+.week-segment {
+  display: flex;
+  justify-content: space-between;
+}
+
 .schedule {
   margin: 0 auto;
   max-width: 400px;
@@ -266,7 +271,7 @@ iframe {
 }
 
 .week-segment > p {
-  margin: 5px auto;
+  margin: 0;
 }
 
 #subscribe {
@@ -280,7 +285,7 @@ iframe {
 }
 
 #form {
-  margin: auto;
+  margin: 0 auto;
   width: 100%;
   height: 200px;
 }
@@ -291,12 +296,16 @@ iframe {
   font-size: 1.4rem;
 }
 
+.form-elements {
+  margin: 0 auto;
+  max-width: 400px;
+}
+
 #email {
   background-color: #000000;
   border-radius: 3px;
   border: 3px solid white;
   width: 100%;
-  max-width: 400px;
   padding: 10px;
   margin-bottom: 5px;
   font-size: 1.1rem;
@@ -316,7 +325,6 @@ iframe {
   border: 3px solid white;
   border-radius: 3px;
   width: 100%;
-  max-width: 400px;
   padding: 7px;
   color: white;
   font-weight: 700;
@@ -383,9 +391,19 @@ footer {
     height: 400px;
   }
 
+  .features-text {
+    font-size: 1.2rem;
+  }
+
+  /* .week-segment {
+    display: flex;
+    justify-content: space-between;
+  } */
+
   .week-segment > p {
     display: inline;
     margin: 5px;
+    font-size: 1.2rem;
   }
 }
 
