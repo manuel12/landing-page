@@ -589,4 +589,17 @@ footer {
   .pricing-container {
     width: 80%;
   }
+
+  #hours {
+    display: flex;
+    justify-content: right;
+  }
+
+  .hours-container {
+    margin: 0;
+  }
+
+  .schedule {
+    margin-right: 0;
+  }
 }
