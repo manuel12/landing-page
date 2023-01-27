@@ -287,10 +287,10 @@ iframe {
 #form {
   margin: 0 auto;
   width: 100%;
-  height: 200px;
 }
 
 .subscription-heading {
+  margin-top: 0;
   color: white;
   font-weight: 400;
   font-size: 1.4rem;
@@ -551,8 +551,9 @@ footer {
   }
 
   .subscription-heading {
-    margin-top: 60px;
+    margin-top: 15px;
     margin-right: 20px;
+    margin-bottom: 0;
   }
 
   .form-elements {
@@ -562,14 +563,12 @@ footer {
   #email {
     width: 400px;
     height: 50px;
-    margin-top: 50px;
     margin-right: 10px;
   }
 
   #submit {
     width: 120px;
     height: 50px;
-    margin-top: 50px;
     font-size: 1rem;
   }
 
