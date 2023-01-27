@@ -338,6 +338,7 @@ iframe {
   background-image: url(https://img.freepik.com/premium-photo/bearded-man-barbershop-man-visiting-hairstylist-barbershop-barber-works-with-beard-clipper-hipster-client-getting-haircut-hands-hairdresser-with-beard-clipper-closeup_293990-2807.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  min-height: 100vh;
   height: fit-content;
 }
 
