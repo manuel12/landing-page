@@ -392,9 +392,11 @@ iframe {
 }
 
 #video,
-#features,
-#hours,
-#pricing {
+#hours {
+  padding-top: 60px;
+}
+
+#features {
   padding-top: 50px;
 }
 
