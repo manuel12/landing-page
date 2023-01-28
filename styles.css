@@ -391,8 +391,11 @@ iframe {
   width: 90%;
 }
 
-footer {
-  height: 200px;
+#video,
+#features,
+#hours,
+#pricing {
+  padding-top: 50px;
 }
 
 @media only screen and (min-width: 600px) {
