@@ -191,7 +191,7 @@ a:hover {
 }
 
 #video {
-  height: 220px;
+  height: 300px;
 }
 
 iframe {
@@ -447,7 +447,7 @@ iframe {
   }
 
   #video {
-    height: 300px;
+    height: 350px;
   }
 
   .schedule-hours {
@@ -527,7 +527,7 @@ iframe {
   }
 
   #video {
-    height: 320px;
+    height: 400px;
   }
 
   #features-text {
@@ -596,6 +596,10 @@ iframe {
   .subscribe-container,
   .pricing-container {
     width: 80%;
+  }
+
+  #video {
+    height: 500px;
   }
 
   #hours {
