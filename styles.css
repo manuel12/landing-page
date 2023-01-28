@@ -278,6 +278,7 @@ iframe {
 #subscribe {
   background-color: #000000;
   min-height: 40vh;
+  padding-top: 70px;
 }
 
 .subscribe-container {
