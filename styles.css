@@ -603,6 +603,7 @@ iframe {
   .subscribe-container,
   .pricing-container {
     width: 80%;
+    max-width: 1080px;
   }
 
   #video {
