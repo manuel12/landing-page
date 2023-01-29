@@ -341,12 +341,18 @@ iframe {
   background-size: cover;
   min-height: 100vh;
   height: fit-content;
+  padding-top: 50px;
 }
 
 .pricing-container {
   margin: 0 auto;
   width: 90%;
   padding: 5% 0;
+}
+
+.pricing-heading {
+  text-align: center;
+  color: white;
 }
 
 .pricing-card {
