@@ -51,6 +51,7 @@ h3 {
   margin: auto;
   height: 50px;
   width: 90%;
+  max-width: 1080px;
   text-decoration: none;
   vertical-align: middle;
   color: darkgray;
