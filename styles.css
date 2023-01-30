@@ -39,13 +39,12 @@ h3 {
 }
 
 #navbar {
-  background-color: lightgray;
+  background-color: #dddddd;
   width: 100%;
   height: 50px;
 }
 
 .navbar-container {
-  background-color: lightgray;
   display: flex;
   justify-content: space-between;
   margin: auto;
@@ -87,7 +86,6 @@ h3 {
 }
 
 .navbar-list {
-  background-color: lightgray;
   position: absolute;
   top: -200px;
   left: 0;
@@ -106,7 +104,7 @@ h3 {
 }
 
 .navbar-link {
-  background-color: lightgray;
+  background-color: #dddddd;
   display: block;
   width: 100%;
 
@@ -162,7 +160,11 @@ a:hover {
 }
 
 #content {
-  background-image: url(https://www.telegraph.co.uk/content/dam/beauty/2020/05/19/GettyImages-1096942614_trans_NvBQzQNjv4BqZgEkZX3M936N5BQK4Va8RWtT0gK_6EfZT336f62EI5U.jpg);
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.1),
+      rgba(255, 255, 255, 0.1)
+    ),
+    url(https://www.telegraph.co.uk/content/dam/beauty/2020/05/19/GettyImages-1096942614_trans_NvBQzQNjv4BqZgEkZX3M936N5BQK4Va8RWtT0gK_6EfZT336f62EI5U.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 50px;
@@ -255,7 +257,7 @@ iframe {
 }
 
 .hours-container {
-  background-color: rgb(36 33 33 / 90%);
+  background-color: #dddddd;
   border: 3px dashed white;
   border-radius: 3px;
   margin: 0 auto;
@@ -277,7 +279,7 @@ iframe {
 }
 
 #subscribe {
-  background-color: #000000;
+  background-color: rgb(35, 35, 35);
   min-height: 40vh;
   padding-top: 70px;
 }
@@ -306,7 +308,7 @@ iframe {
 }
 
 #email {
-  background-color: #000000;
+  background-color: rgb(35, 35, 35);
   border-radius: 3px;
   border: 3px solid white;
   width: 100%;
@@ -325,7 +327,7 @@ iframe {
 }
 
 #submit {
-  background: #000000;
+  background: rgb(35, 35, 35);
   border: 3px solid white;
   border-radius: 3px;
   width: 100%;
@@ -337,7 +339,12 @@ iframe {
 }
 
 #pricing {
-  background-image: url(https://img.freepik.com/premium-photo/bearded-man-barbershop-man-visiting-hairstylist-barbershop-barber-works-with-beard-clipper-hipster-client-getting-haircut-hands-hairdresser-with-beard-clipper-closeup_293990-2807.jpg);
+  background-color: white;
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.1),
+      rgba(255, 255, 255, 0.1)
+    ),
+    url(https://img.freepik.com/premium-photo/bearded-man-barbershop-man-visiting-hairstylist-barbershop-barber-works-with-beard-clipper-hipster-client-getting-haircut-hands-hairdresser-with-beard-clipper-closeup_293990-2807.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 100vh;
