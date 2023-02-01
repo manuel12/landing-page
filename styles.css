@@ -560,10 +560,6 @@ iframe {
     width: 100%;
   }
 
-  .hours-container {
-    height: 320px;
-  }
-
   .week-segment > p {
     margin: 5px !important;
   }
