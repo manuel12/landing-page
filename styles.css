@@ -265,17 +265,23 @@ iframe {
 }
 
 .hours-container {
-  background-color: #7a7a7aeb;
-  border: 3px dashed white;
+  background-color: var(--main-color);
+  border: 3px solid var(--secondary-color);
   border-radius: 3px;
   margin: 0 auto;
   width: 100%;
   max-width: 400px;
   height: 90%;
   padding: 10px;
-  color: white;
+  opacity: 0.9;
+  color: var(--secondary-color);
   font-family: "Aclonica", Helvetica, Arial, Lucida, sans-serif;
   text-align: center;
+}
+
+.hours-container > h2 {
+  text-shadow: none;
+  color: var(--secondary-color);
 }
 
 .hour-segment {
