@@ -1,0 +1,629 @@
+* {
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  border-radius: 30px;
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 30px;
+  background: #888;
+  box-shadow: 10px 15px 5px #4d4d4d inset;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Aclonica", Helvetica, Arial, Lucida, sans-serif;
+  font-size: 1.1rem;
+}
+
+h1,
+h2,
+h3 {
+  text-align: center;
+}
+
+#header {
+  position: fixed;
+  width: 100%;
+}
+
+#navbar {
+  background-color: #dddddd;
+  width: 100%;
+  height: 50px;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  height: 50px;
+  width: 90%;
+  max-width: 1080px;
+  text-decoration: none;
+  vertical-align: middle;
+  color: darkgray;
+}
+
+.company-info {
+  display: flex;
+  position: relative;
+  width: 10%;
+}
+
+#company-link {
+  display: flex;
+  text-decoration: none;
+}
+
+#company-name {
+  display: none;
+  position: relative;
+  margin-right: 5px;
+  line-height: 50px;
+  font-size: 1.4rem;
+  text-decoration: none;
+  color: rgb(35, 35, 35);
+}
+
+#company-logo {
+  position: relative;
+  top: 5px;
+  width: 40px;
+  height: 40px;
+  line-height: 50px;
+}
+
+.navbar-list {
+  position: absolute;
+  top: -200px;
+  left: 0;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+
+  text-align: center;
+  z-index: -1;
+  transition: 0.25s ease-in-out;
+}
+
+.navbar-list-active {
+  top: 50px;
+  left: 0;
+}
+
+.navbar-link {
+  background-color: #dddddd;
+  display: block;
+  width: 100%;
+
+  line-height: 50px;
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: rgb(35, 35, 35);
+}
+
+a:hover {
+  color: #ee603f;
+}
+
+#hamburger-btn {
+  display: block;
+  background-color: #ec2227;
+  border-radius: 5px;
+
+  margin: 5px 0;
+  padding: 4px 0;
+
+  width: 25%;
+  max-width: 70px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 30px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+  background-color: white;
+}
+
+#hamburger-btn.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+#hamburger-btn.active .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+#hamburger-btn.active .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+.main {
+  width: 100%;
+  height: 1000px;
+}
+
+#content {
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.1),
+      rgba(255, 255, 255, 0.1)
+    ),
+    url(https://www.telegraph.co.uk/content/dam/beauty/2020/05/19/GettyImages-1096942614_trans_NvBQzQNjv4BqZgEkZX3M936N5BQK4Va8RWtT0gK_6EfZT336f62EI5U.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 50px;
+  min-height: 100vh;
+}
+
+.main-heading {
+  font-family: "Poppins", Helvetica, Arial, Lucida, sans-serif;
+  text-transform: uppercase;
+  line-height: 1.2em;
+  word-spacing: 5px;
+  font-size: 30px;
+  color: white;
+  text-shadow: 0em 0.1em 0.1em #000000;
+}
+
+.content-container {
+  margin: 0 auto;
+  width: 90%;
+  padding: 5% 0;
+}
+
+.video-features {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#video {
+  height: 300px;
+}
+
+iframe {
+  width: 100%;
+  height: 100%;
+}
+
+#features {
+  text-align: center;
+  height: 43%;
+  width: 100%;
+  color: white;
+}
+
+#features-heading {
+  text-decoration: underline;
+}
+
+#features-text {
+  font-size: 1.3rem;
+}
+
+.schedule-hours {
+  width: 100%;
+}
+
+.week-segment {
+  display: flex;
+  justify-content: space-between;
+}
+
+.schedule {
+  margin: 0 auto;
+  max-width: 400px;
+  height: 50%;
+}
+
+.schedule-btn {
+  background-color: #ec2227;
+  padding: 20px;
+  border: none;
+  border-radius: 3px;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.schedule-btn:active {
+  background-color: #9f3f2e;
+}
+
+.main-schedule-btn {
+  width: 100%;
+  margin: 10px 0;
+}
+
+#hours {
+  height: 50%;
+  width: 100%;
+}
+
+.hours-container {
+  background-color: #7a7a7aeb;
+  border: 3px dashed white;
+  border-radius: 3px;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 400px;
+  height: 90%;
+  padding: 10px;
+  color: white;
+  font-family: "Aclonica", Helvetica, Arial, Lucida, sans-serif;
+  text-align: center;
+}
+
+.hour-segment {
+  font-weight: bold;
+}
+
+.week-segment > p {
+  margin: 0;
+}
+
+#subscribe {
+  background-color: rgb(35, 35, 35);
+  min-height: 40vh;
+  padding-top: 70px;
+}
+
+.subscribe-container {
+  margin: 0 auto;
+  width: 90%;
+  padding: 5% 0;
+}
+
+#form {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.subscription-heading {
+  margin-top: 0;
+  color: white;
+  font-weight: 400;
+  font-size: 1.4rem;
+}
+
+.form-elements {
+  margin: 0 auto;
+  max-width: 400px;
+}
+
+#email {
+  background-color: rgb(35, 35, 35);
+  border-radius: 3px;
+  border: 3px solid white;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 5px;
+  font-size: 1.1rem;
+  color: white;
+}
+
+#email::placeholder {
+  color: white;
+}
+
+#email:focus {
+  outline: none;
+}
+
+#submit {
+  background: rgb(35, 35, 35);
+  border: 3px solid white;
+  border-radius: 3px;
+  width: 100%;
+  padding: 7px;
+  color: white;
+  font-weight: 700;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+#pricing {
+  background-color: white;
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.1),
+      rgba(255, 255, 255, 0.1)
+    ),
+    url(https://img.freepik.com/premium-photo/bearded-man-barbershop-man-visiting-hairstylist-barbershop-barber-works-with-beard-clipper-hipster-client-getting-haircut-hands-hairdresser-with-beard-clipper-closeup_293990-2807.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  height: fit-content;
+  padding-top: 50px;
+}
+
+.pricing-container {
+  margin: 0 auto;
+  width: 90%;
+  padding: 5% 0;
+}
+
+.pricing-heading {
+  text-align: center;
+  color: white;
+}
+
+.pricing-card {
+  background-color: lightgray;
+  border: 3px dashed #7a7a7a;
+  border-radius: 5px;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 400px;
+  height: 300px;
+  margin-bottom: 20px;
+}
+
+.price-text {
+  background-color: #7a7a7a;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  height: 120px;
+  padding: 20px 20px;
+
+  font-family: "Aclonica", Helvetica, Arial, Lucida, sans-serif;
+  font-size: 2rem;
+  font-weight: 400;
+  text-align: center;
+  vertical-align: middle;
+
+  color: white;
+}
+
+.price-text > span {
+  font-style: italic;
+}
+
+.price {
+  margin: 10px;
+  font-weight: bold;
+}
+
+.card-btn {
+  display: block;
+  margin: auto 5%;
+  margin-top: 60px;
+  width: 90%;
+}
+
+#video,
+#hours {
+  padding-top: 60px;
+}
+
+#features {
+  padding-top: 50px;
+}
+
+@media only screen and (min-width: 600px) {
+  #video {
+    height: 400px;
+  }
+
+  .features-text {
+    font-size: 1.2rem;
+  }
+
+  .week-segment > p {
+    display: inline;
+    margin: 5px;
+    font-size: 1.2rem;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  #company-name {
+    display: block;
+  }
+
+  .navbar-list {
+    position: initial;
+    display: flex;
+    width: 60%;
+    z-index: 1;
+    transition: none;
+  }
+
+  .navbar-link {
+    display: initial;
+  }
+
+  #hamburger-btn {
+    display: none;
+  }
+
+  .inner-content {
+    display: flex;
+  }
+
+  .video-features {
+    width: 65%;
+    margin-right: 2.5%;
+  }
+
+  #video {
+    height: 350px;
+  }
+
+  .schedule-hours {
+    width: 35%;
+    margin-left: 2.5%;
+  }
+
+  .schedule {
+    height: 250px;
+  }
+
+  .main-schedule-btn {
+    margin-top: 60%;
+  }
+
+  .hours-container {
+    height: fit-content;
+  }
+
+  .week-segment > p {
+    display: block;
+  }
+
+  #form {
+    height: auto;
+  }
+
+  .form-elements {
+    display: flex;
+    max-width: 100%;
+    margin-top: 10px;
+    margin: 0 auto;
+  }
+
+  #email {
+    min-width: 400px;
+    width: 75%;
+    height: 50px;
+    margin-right: 10px;
+  }
+
+  #submit {
+    min-width: 120px;
+    width: 25%;
+    height: 50px;
+    font-size: 1rem;
+  }
+
+  .pricing-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 5% 0;
+  }
+
+  .pricing-card {
+    margin: 0;
+    width: 200px;
+  }
+
+  .price-text {
+    height: 150px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  body {
+    font-size: 1rem;
+  }
+
+  .inner-content {
+    display: flex;
+  }
+
+  .video-features {
+    width: 65%;
+    margin-right: 2.5%;
+  }
+
+  #video {
+    height: 400px;
+  }
+
+  #features-text {
+    font-size: 1.1rem;
+  }
+
+  .schedule-hours {
+    width: 35%;
+    margin-left: 2.5%;
+  }
+
+  .main-schedule-btn {
+    margin: 0;
+    margin-top: 20%;
+    width: 100%;
+  }
+
+  .week-segment > p {
+    margin: 5px !important;
+  }
+
+  #form {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .subscription-heading {
+    margin-top: 15px;
+    margin-right: 20px;
+    margin-bottom: 0;
+  }
+
+  .form-elements {
+    margin: 0;
+  }
+
+  #email {
+    width: 400px;
+    height: 50px;
+    margin-right: 10px;
+  }
+
+  #submit {
+    width: 120px;
+    height: 50px;
+    font-size: 1rem;
+  }
+
+  .pricing-card {
+    width: 250px;
+  }
+
+  .price-text {
+    font-size: 1.6rem;
+    padding: 20px 10px;
+    height: 115px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .content-container,
+  .subscribe-container,
+  .pricing-container {
+    width: 80%;
+    max-width: 1080px;
+  }
+
+  #video {
+    height: 500px;
+  }
+
+  #hours {
+    display: flex;
+    justify-content: right;
+  }
+
+  .hours-container {
+    margin: 0;
+  }
+
+  .schedule {
+    margin-right: 0;
+  }
+}
