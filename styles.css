@@ -17,6 +17,12 @@
   box-shadow: 10px 15px 5px #4d4d4d inset;
 }
 
+:root {
+  --main-color: #f1f1f1;
+  --secondary-color: #1a1a1a;
+  --action-color: #eb002b;
+}
+
 html {
   scroll-behavior: smooth;
 }
