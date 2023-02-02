@@ -380,6 +380,7 @@ iframe {
 }
 
 .pricing-card {
+  background-color: var(--main-color);
   border: 3px solid var(--secondary-color);
   border-radius: 5px;
   margin: 0 auto;
@@ -391,10 +392,7 @@ iframe {
 }
 
 .price-text {
-  border-bottom: 3px solid var(--secondary-color);
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-  height: 120px;
+  height: 160px;
   padding: 20px 20px;
 
   font-family: "Aclonica", Helvetica, Arial, Lucida, sans-serif;
@@ -402,7 +400,6 @@ iframe {
   font-weight: bold;
   font-style: italic;
   text-align: center;
-  vertical-align: middle;
 
   color: var(--secondary-color);
 }
@@ -414,7 +411,7 @@ iframe {
 .card-btn {
   display: block;
   margin: auto 5%;
-  margin-top: 60px;
+  margin-top: 40px;
   width: 90%;
 }
 
@@ -533,10 +530,6 @@ iframe {
     margin: 0;
     width: 200px;
   }
-
-  .price-text {
-    height: 150px;
-  }
 }
 
 @media only screen and (min-width: 992px) {
@@ -610,7 +603,6 @@ iframe {
   .price-text {
     font-size: 1.6rem;
     padding: 20px 10px;
-    height: 115px;
   }
 }
 
