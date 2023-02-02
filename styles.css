@@ -217,7 +217,7 @@ iframe {
   color: var(--secondary-color);
 }
 
-#features > h2 {
+.features-heading {
   text-shadow: none;
   color: var(--secondary-color);
 }
@@ -375,7 +375,8 @@ iframe {
 
 .pricing-heading {
   text-align: center;
-  color: white;
+  color: var(--secondary-color);
+  text-shadow: none;
 }
 
 .pricing-card {
