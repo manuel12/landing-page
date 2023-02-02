@@ -214,11 +214,12 @@ iframe {
   text-align: center;
   height: 43%;
   width: 100%;
-  color: white;
+  color: var(--secondary-color);
 }
 
-#features-heading {
-  text-decoration: underline;
+#features > h2 {
+  text-shadow: none;
+  color: var(--secondary-color);
 }
 
 #features-text {
