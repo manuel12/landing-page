@@ -393,10 +393,10 @@ iframe {
 
 .price-text {
   height: 160px;
-  padding: 20px 20px;
+  padding: 50px 10px;
 
   font-family: "Aclonica", Helvetica, Arial, Lucida, sans-serif;
-  font-size: 2rem;
+  font-size: 2.4rem;
   font-weight: bold;
   font-style: italic;
   text-align: center;
@@ -601,8 +601,8 @@ iframe {
   }
 
   .price-text {
-    font-size: 1.6rem;
-    padding: 20px 10px;
+    font-size: 1.8rem;
+    padding: 50px 10px;
   }
 }
 
