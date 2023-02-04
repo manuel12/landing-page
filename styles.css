@@ -275,10 +275,10 @@ iframe {
   max-width: 400px;
   height: 90%;
   padding: 10px;
-  opacity: 0.9;
   color: var(--secondary-color);
   font-family: "Aclonica", Helvetica, Arial, Lucida, sans-serif;
   text-align: center;
+  box-shadow: 8px 8px 4px rgba(0, 0, 0, 0.25);
 }
 
 .hours-container > h2 {
@@ -460,23 +460,16 @@ iframe {
   #hamburger-btn {
     display: none;
   }
-
-  .inner-content {
-    display: flex;
-  }
-
   .video-features {
-    width: 65%;
-    margin-right: 2.5%;
+    width: 100%;
   }
 
   #video {
-    height: 350px;
+    height: 500px;
   }
 
   .schedule-hours {
-    width: 35%;
-    margin-left: 2.5%;
+    width: 100%;
   }
 
   .schedule {
@@ -484,7 +477,7 @@ iframe {
   }
 
   .main-schedule-btn {
-    margin-top: 60%;
+    margin-top: 20px;
   }
 
   .hours-container {
@@ -544,10 +537,7 @@ iframe {
   .video-features {
     width: 65%;
     margin-right: 2.5%;
-  }
-
-  #video {
-    height: 400px;
+    height: 500px;
   }
 
   #features-text {
@@ -557,11 +547,15 @@ iframe {
   .schedule-hours {
     width: 35%;
     margin-left: 2.5%;
+    height: 500px;
+  }
+
+  .schedule {
+    height: 200px;
+    padding-top: 50%;
   }
 
   .main-schedule-btn {
-    margin: 0;
-    margin-top: 20%;
     width: 100%;
   }
 
