@@ -213,11 +213,16 @@ iframe {
 }
 
 #features {
-  min-height: 60vh;
   width: 100%;
-  padding-top: 15vh;
   text-align: center;
+  line-height: 2.5rem;
   color: var(--secondary-color);
+}
+
+.features-container {
+  margin: 0 auto;
+  width: 90%;
+  padding: 15vh 5%;
 }
 
 .features-heading {
@@ -225,8 +230,12 @@ iframe {
   color: var(--secondary-color);
 }
 
-#features-text {
-  font-size: 1.3rem;
+.features-text {
+  font-size: 1.4rem;
+}
+
+.features-text > span {
+  font-style: italic;
 }
 
 .schedule-hours {
@@ -408,6 +417,10 @@ iframe {
   color: var(--secondary-color);
 }
 
+.price-text > span {
+  text-decoration: 2px underline var(--action-color);
+}
+
 .price {
   margin: 10px;
 }
@@ -422,10 +435,6 @@ iframe {
 @media only screen and (min-width: 600px) {
   #video {
     height: 400px;
-  }
-
-  .features-text {
-    font-size: 1.2rem;
   }
 
   .week-segment > p {
@@ -597,6 +606,7 @@ iframe {
 @media only screen and (min-width: 1200px) {
   .content-container,
   .subscribe-container,
+  .features-container,
   .pricing-container {
     width: 80%;
     max-width: 1080px;
