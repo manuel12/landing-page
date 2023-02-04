@@ -204,6 +204,7 @@ a:hover {
 
 #video {
   height: 300px;
+  padding-top: 60px;
 }
 
 iframe {
@@ -212,9 +213,10 @@ iframe {
 }
 
 #features {
-  text-align: center;
-  height: 43%;
+  min-height: 60vh;
   width: 100%;
+  padding-top: 15vh;
+  text-align: center;
   color: var(--secondary-color);
 }
 
@@ -229,6 +231,7 @@ iframe {
 
 .schedule-hours {
   width: 100%;
+  padding-top: 60px;
 }
 
 .week-segment {
@@ -414,15 +417,6 @@ iframe {
   margin: auto 5%;
   margin-top: 40px;
   width: 90%;
-}
-
-#video,
-#hours {
-  padding-top: 60px;
-}
-
-#features {
-  padding-top: 50px;
 }
 
 @media only screen and (min-width: 600px) {
