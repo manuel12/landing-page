@@ -268,7 +268,7 @@ iframe {
 
 .hours-container {
   background-color: var(--main-color);
-  border: 3px solid var(--secondary-color);
+  border: 2px solid var(--secondary-color);
   border-radius: 3px;
   margin: 0 auto;
   width: 100%;
@@ -382,7 +382,7 @@ iframe {
 
 .pricing-card {
   background-color: var(--main-color);
-  border: 3px solid var(--secondary-color);
+  border: 2px solid var(--secondary-color);
   border-radius: 5px;
   margin: 0 auto;
   width: 100%;
