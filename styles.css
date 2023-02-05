@@ -243,35 +243,7 @@ iframe {
   padding-top: 60px;
 }
 
-.week-segment {
-  display: flex;
-  justify-content: space-between;
-}
 
-.schedule {
-  margin: 0 auto;
-  max-width: 400px;
-  height: 50%;
-}
-
-.schedule-btn {
-  background-color: var(--action-color);
-  padding: 20px;
-  border: none;
-  border-radius: 3px;
-  color: white;
-  font-size: 1.2rem;
-  cursor: pointer;
-}
-
-.schedule-btn:active {
-  background-color: #c10024;
-}
-
-.main-schedule-btn {
-  width: 100%;
-  margin: 10px 0;
-}
 
 #hours {
   height: 50%;
@@ -302,8 +274,39 @@ iframe {
   font-weight: bold;
 }
 
+.week-segment {
+  display: flex;
+  justify-content: space-between;
+}
+
 .week-segment > p {
   margin: 0;
+}
+
+.schedule-btn-container {
+  margin: 0 auto;
+  max-width: 400px;
+  height: 50%;
+}
+
+.schedule-btn {
+  background-color: var(--action-color);
+  padding: 20px;
+  border: none;
+  border-radius: 3px;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.schedule-btn:active {
+  background-color: #c10024;
+}
+
+.main-schedule-btn {
+  width: 100%;
+  max-width: 400px;
+  margin: 10px auto;
 }
 
 #subscribe {
@@ -614,11 +617,6 @@ iframe {
 
   #video {
     height: 500px;
-  }
-
-  #hours {
-    display: flex;
-    justify-content: right;
   }
 
   .hours-container {
