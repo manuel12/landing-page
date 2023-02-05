@@ -196,7 +196,7 @@ a:hover {
   padding: 5% 0;
 }
 
-.video-features {
+.video-container {
   margin: 0;
   width: 100%;
   height: 100%;
@@ -243,13 +243,6 @@ iframe {
   padding-top: 60px;
 }
 
-
-
-#hours {
-  height: 50%;
-  width: 100%;
-}
-
 .hours-container {
   background-color: var(--main-color);
   border: 2px solid var(--secondary-color);
@@ -284,6 +277,8 @@ iframe {
 }
 
 .schedule-btn-container {
+  display: flex;
+  flex-direction: column;
   margin: 0 auto;
   max-width: 400px;
   height: 50%;
@@ -304,9 +299,10 @@ iframe {
 }
 
 .main-schedule-btn {
+  max-height: 60px;
   width: 100%;
   max-width: 400px;
-  margin: 10px auto;
+  margin-top: 15px;
 }
 
 #subscribe {
@@ -453,6 +449,7 @@ iframe {
   }
 
   .navbar-list {
+    background-color: var(--secondary-color);
     position: initial;
     display: flex;
     width: 60%;
@@ -466,7 +463,8 @@ iframe {
   #hamburger-btn {
     display: none;
   }
-  .video-features {
+
+  .video-container {
     width: 100%;
   }
 
@@ -478,12 +476,8 @@ iframe {
     width: 100%;
   }
 
-  .schedule {
-    height: 250px;
-  }
-
   .main-schedule-btn {
-    margin-top: 20px;
+    margin-top: 30px;
   }
 
   .hours-container {
@@ -540,14 +534,10 @@ iframe {
     display: flex;
   }
 
-  .video-features {
+  .video-container {
     width: 65%;
     margin-right: 2.5%;
     height: 500px;
-  }
-
-  #features-text {
-    font-size: 1.1rem;
   }
 
   .schedule-hours {
@@ -556,9 +546,12 @@ iframe {
     height: 500px;
   }
 
-  .schedule {
-    height: 200px;
-    padding-top: 50%;
+  .hours-container {
+    height: 350px;
+  }
+
+  .schedule-btn-container {
+    height: 150px;
   }
 
   .main-schedule-btn {
@@ -567,6 +560,10 @@ iframe {
 
   .week-segment > p {
     margin: 5px !important;
+  }
+
+  #features-text {
+    font-size: 1.1rem;
   }
 
   #form {
@@ -621,9 +618,5 @@ iframe {
 
   .hours-container {
     margin: 0;
-  }
-
-  .schedule {
-    margin-right: 0;
   }
 }
