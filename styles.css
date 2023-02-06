@@ -94,6 +94,7 @@ h3 {
 
   filter: invert(100%);
   -webkit-filter: invert(100%);
+  z-index: 11;
 }
 
 .navbar-list {
