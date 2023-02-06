@@ -6,17 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <body>
-    <header id="header">
-      <nav id="navbar">
+    <header class="header" id="header">
+      <nav class="navbar" id="navbar">
         <div class="navbar-container">
           <div class="company-info">
             <a
               href="https://www.beardbrand.com/"
+              class="company-link"
               id="company-link"
               target="_blank"
             >
-              <div id="company-name">BEARDBRAND</div>
+              <div class="company-name" id="company-name">BEARDBRAND</div>
               <img
+                class="company-logo"
                 id="company-logo"
                 src="https://cdn.shopify.com/s/files/1/0209/0478/files/Beard_circle_icon_4x_626ae8bb-9a4b-4d03-b029-28720e18e4c9.png?v=1649454795"
               />
@@ -28,7 +30,7 @@
             <a class="navbar-link" href="#features">YOU GET</a>
             <a class="navbar-link" href="#pricing">PRICING</a>
           </ul>
-          <div id="hamburger-btn">
+          <div class="hamburger-btn" id="hamburger-btn">
             <span class="bar"></span>
             <span class="bar"></span>
             <span class="bar"></span>
@@ -37,7 +39,7 @@
       </nav>
     </header>
     <main class="main">
-      <section id="content">
+      <section class="content" id="content">
         <div class="content-container">
           <div class="main-heading">
             <h1>Great haircuts and beard shaves</h1>
@@ -45,6 +47,7 @@
           <div class="inner-content">
             <div class="video-container">
               <iframe
+                class="video"
                 id="video"
                 src="https://www.youtube.com/embed/A3Bl8VECdLo"
                 title="YouTube video player"
@@ -94,7 +97,7 @@
           </div>
         </div>
       </section>
-      <section id="features">
+      <section class="features" id="features">
         <div class="features-container">
           <h2 class="main-heading features-heading">You get</h2>
           <p class="features-text">
@@ -110,39 +113,51 @@
           </p>
         </div>
       </section>
-      <section id="subscribe">
+      <section class="subscribe" id="subscribe">
         <div class="subscribe-container">
-          <form id="form" action="https://www.freecodecamp.com/email-submit">
+          <form
+            class="form"
+            id="form"
+            action="https://www.freecodecamp.com/email-submit"
+          >
             <h3 class="subscription-heading">SUBSCRIBE TO OUR NEWSLETTER...</h3>
             <div class="form-elements">
-              <input id="email" type="email" name="email" placeholder="Email" />
-              <button id="submit" type="submit">SUBSCRIBE</button>
+              <input
+                class="email"
+                id="email"
+                type="email"
+                name="email"
+                placeholder="Email"
+              />
+              <button id="submit" class="submit" type="submit">
+                SUBSCRIBE
+              </button>
             </div>
           </form>
         </div>
       </section>
-      <section id="pricing">
+      <section class="pricing" id="pricing">
         <h2 class="main-heading pricing-heading">Our Prices</h2>
         <div class="pricing-container">
           <div class="pricing-card">
             <div class="price-text">
               <span>Haircut<br /></span>
-              <div class="price">$25</div>
             </div>
+            <div class="price">$25</div>
             <button class="schedule-btn card-btn">SCHEDULE</button>
           </div>
           <div class="pricing-card">
             <div class="price-text">
               <span>Haircut + Shave<br /></span>
-              <div class="price">$35</div>
             </div>
+            <div class="price">$35</div>
             <button class="schedule-btn card-btn">SCHEDULE</button>
           </div>
           <div class="pricing-card">
             <div class="price-text">
               <span>Shave<br /></span>
-              <div class="price">$15</div>
             </div>
+            <div class="price">$15</div>
             <button class="schedule-btn card-btn">SCHEDULE</button>
           </div>
         </div>
