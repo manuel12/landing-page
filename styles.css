@@ -19,7 +19,7 @@
 
 :root {
   --main-color: #f1f1f1;
-  --secondary-color: #1a1a1a;
+  --secondary-color: #232323;
   --action-color: #eb002b;
 }
 
@@ -180,7 +180,7 @@ a:hover {
     url(https://www.telegraph.co.uk/content/dam/beauty/2020/05/19/GettyImages-1096942614_trans_NvBQzQNjv4BqZgEkZX3M936N5BQK4Va8RWtT0gK_6EfZT336f62EI5U.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 50px 0;
+  padding: 100px 0 50px;
   min-height: 100vh;
 }
 
@@ -228,7 +228,6 @@ iframe {
 }
 
 .features-heading {
-  margin-bottom: 50px;
   text-shadow: none;
   color: var(--secondary-color);
 }
@@ -255,7 +254,7 @@ iframe {
   width: 100%;
   max-width: 400px;
   height: 90%;
-  padding: 10px 0;
+  padding: 10px;
   color: var(--secondary-color);
   font-family: "Aclonica", Helvetica, Arial, Lucida, sans-serif;
   text-align: center;
@@ -317,7 +316,7 @@ iframe {
 }
 
 #subscribe {
-  background-color: rgb(35, 35, 35);
+  background-color: var(--secondary-color);
   padding: 50px 0;
 }
 
@@ -344,7 +343,7 @@ iframe {
 }
 
 #email {
-  background-color: rgb(35, 35, 35);
+  background-color: var(--secondary-color);
   border-radius: 3px;
   border: 3px solid white;
   width: 100%;
@@ -397,6 +396,7 @@ iframe {
 .pricing-container {
   margin: 0 auto;
   width: 90%;
+  padding: 50px 0;
 }
 
 .pricing-heading {
@@ -542,7 +542,6 @@ iframe {
   .pricing-container {
     display: flex;
     justify-content: space-between;
-    padding: 5% 0;
   }
 
   .pricing-card {
