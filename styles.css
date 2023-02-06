@@ -415,6 +415,12 @@ iframe {
   height: 300px;
   margin-bottom: 20px;
 
+  font-family: "Aclonica", Helvetica, Arial, Lucida, sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+  font-style: italic;
+  text-align: center;
+
   transition: all 0.25s ease-in-out;
 }
 
@@ -424,30 +430,20 @@ iframe {
 }
 
 .price-text {
-  height: 160px;
-  padding: 50px 10px;
-
-  font-family: "Aclonica", Helvetica, Arial, Lucida, sans-serif;
-  font-size: 2.4rem;
-  font-weight: bold;
-  font-style: italic;
-  text-align: center;
-
+  background-color: lightgrey;
+  height: 90px;
+  padding: 10px;
   color: var(--secondary-color);
 }
 
-.price-text > span {
-  text-decoration: 2px underline var(--action-color);
-}
-
 .price {
-  margin: 10px;
+  height: 120px;
+  padding-top: 40px;
 }
 
 .card-btn {
   display: block;
   margin: auto 5%;
-  margin-top: 40px;
   width: 90%;
 
   transition: all 0.25s ease-in-out;
