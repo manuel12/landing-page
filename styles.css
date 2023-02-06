@@ -97,6 +97,7 @@ h3 {
 }
 
 .navbar-list {
+  background-color: var(--secondary-color);
   position: absolute;
   top: -200px;
   left: 0;
@@ -370,8 +371,7 @@ iframe {
   width: 100%;
   padding: 7px;
   color: white;
-  font-weight: 700;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   cursor: pointer;
 
   transition: all 0.25s ease-in-out;
@@ -459,7 +459,7 @@ iframe {
 .card-btn:hover {
   background-color: white;
   border: 3px solid var(--action-color);
-  color: var(--action-color)
+  color: var(--action-color);
 }
 
 @media only screen and (min-width: 600px) {
@@ -480,7 +480,6 @@ iframe {
   }
 
   .navbar-list {
-    background-color: var(--secondary-color);
     position: initial;
     display: flex;
     width: 60%;
@@ -541,7 +540,6 @@ iframe {
     min-width: 120px;
     width: 25%;
     height: 50px;
-    font-size: 1rem;
   }
 
   .pricing-container {
@@ -621,7 +619,6 @@ iframe {
   #submit {
     width: 30%;
     height: 50px;
-    font-size: 1rem;
   }
 
   .pricing-card {
